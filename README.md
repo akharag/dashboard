@@ -19,8 +19,8 @@ Table of Contents
 ### Assumptions:
 
 **Laravel** is already installed on the computer. <br/>
-**Composer** is already installed on the computer.
-(Optional )**NPM** and **Node** if a user wants to generate their own styles with [Tailwind](#tailwind-css-was-used-to-style-the-project)
+**Composer** is already installed on the computer. <br />
+(Optional )**NPM** and **Node** if a user wants to generate their own styles with [Tailwind](#tailwind-css-was-used-to-style-the-project).
 
 ### [Database (MySQL)](https://www.mysqltutorial.org/getting-started-with-mysql/):
 
@@ -36,6 +36,8 @@ $ mysql -uroot
 sql> CREATE DATABASE dashboard
 sql> quit
 ```
+
+Although I did not use windows, I have included instructions below.
 
 ##### [Windows](https://www.mysqltutorial.org/install-mysql/)
 
@@ -77,13 +79,13 @@ $ php artisan serve
 
 ### Hompage:
 
--   User: Display full name and address
--   Admin: Display name and all registered users
-    -   note: Does crude check of user role inside controller to get all registered users. Do to time constriants I did't use a better solution. This is most likely an unsafe method of displaying the users for an admin because a regular user could in theory spoof that they are a admin.
+-   User: Displays full name and address
+-   Admin: Displays name and all registered users
+    -   note: Does crude check of user role inside controller to get all registered users. Due to time constriants I did't use a better solution. This is most likely an unsafe method of displaying the users for an admin because a regular user could in theory spoof that they are a admin.
 
 ## Other Information
 
-If the user decided to use the Seeders, then by default one Admin user is created
+If you decided to use the Seeders, then by default one Admin user is created
 
     username: `admin`
     password: `admin`
