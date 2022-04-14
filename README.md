@@ -43,6 +43,7 @@ The database can also be created using [MySQL Workbench](https://www.mysqltutori
 
 ```
 $ cd ~/path/to/project
+$ composer i
 $ php artisan serve
 ```
 
