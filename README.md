@@ -79,7 +79,7 @@ $ php artisan serve
 
 -   User: Display full name and address
 -   Admin: Display name and all registered users
-    -   note: Does crude check of user role inside controller to get all registered users. Do to time constriants I couldn't of a better solution. This is most likely an unsafe method of displaying the users for an admin because a regular user could in theory spoof that they are a admin
+    -   note: Does crude check of user role inside controller to get all registered users. Do to time constriants I did't use a better solution. This is most likely an unsafe method of displaying the users for an admin because a regular user could in theory spoof that they are a admin.
 
 ## Other Information
 
