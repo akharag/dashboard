@@ -4,7 +4,8 @@
     <div class="flex justify-center">
         <div class="w-8/12 min-w-fit bg-white p-6 rounded-lg">
             @auth
-                <h1 class="text-base">Welcome, {{ $current_user->first_name }} {{ $current_user->last_name }}</h1>
+                <h1 class="text-xl mb-2 border-b-2 border-gray-300">Welcome, {{ $current_user->first_name }}
+                    {{ $current_user->last_name }}</h1>
                 @if ($current_user->role === 'user')
                     <h2 class="text-sm">Address</h2>
                     <p class="text-xs">{{ $current_user->address }}</p>

@@ -1,23 +1,50 @@
-# Ship Boss Technical Test
+# Laravel Dashboard Demo
 
-## Install and Running Instructions
+Table of Contents
 
-Feel free to use any database you like. I used MySQL with MacOS so I will include instructions on how to install and run it below.
+-   [Install and Running Instructions](#install-and-running-instructions)
+    -   [Assumptions](#assumptions)
+    -   [Database](#database-mysqlhttpswwwmysqltutorialorggetting-started-with-mysql)
+-   [Running Instructions](#running-instructions)
+
+## Instalation Instructions
+
+### Assumptions:
+
+Laravel is already installed on the computer being used to run this.
 
 #### [Database (MySQL)](https://www.mysqltutorial.org/getting-started-with-mysql/):
 
-Mac OS:
+Feel free to use any database you like. I used MySQL with MacOS so I will include instructions on how I installed it.
+
+Mac OS
 
 ```
 $ brew install mysql
 $ mysql -uroot
-$ brew services start mysql
-sql>CREATE DATABASE dashboard
-sql>quit
-$ mysql -u root -p
+sql> CREATE DATABASE dashboard
+sql> quit
 ```
 
+[Windows](https://www.mysqltutorial.org/install-mysql/)
+
+1. Download and run the installer
+1. Create the database in the command-prompt
+
+```
+D:\ mysql -u root
+mysql> CREATE DATABASE dashboard
+mysql> quit
+```
+
+The database can also be created using [MySQL Workbench](https://www.mysqltutorial.org/getting-started-with-mysql/connect-to-mysql-server/). That will not be covered here
+
 ## Running Instructions
+
+```
+$ cd ~/path/to/project
+$ php artisan serve
+```
 
 ## Pages
 
@@ -43,4 +70,7 @@ $ mysql -u root -p
 
 -   User: Display full name and address
 -   Admin: Display name and all registered users
-# dashboard
+
+## Other Information
+
+Tailwind CSS was used to style the project
