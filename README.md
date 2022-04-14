@@ -81,7 +81,7 @@ $ php artisan serve
 
 -   User: Displays full name and address
 -   Admin: Displays name and all registered users
-    -   note: Does crude check of user role inside controller to get all registered users. Due to time constriants I did't use a better solution. This is most likely an unsafe method of displaying the users for an admin because a regular user could in theory spoof that they are a admin.
+    -   note: Does crude check of user role inside controller to get all registered users. Due to time constriants I didn't use a better solution. This is most likely an unsafe method of displaying the users for an admin because a regular user could in theory spoof that they are a admin.
 
 ## Other Information
 
@@ -94,15 +94,15 @@ and 50 regular users all with the password:
 
     123456
 
-### Tailwind CSS was used to style the project
+#### Tailwind CSS was used to style the project.
 
-If one would like to generate their own tailwind styles run
+If one would like to generate their own tailwind styles:
 
 ```
 # Create live server that watches changes and will automatically generate utility files
 $ npm i && npm run watch
 ```
 
-Due to time restrains, I did not set up Laravel as an API and React as a front-end. This was my first time deep diving into PHP and Laravel so most of my time was spent learning about both of these things.
+Due to time restrains, I did not set up Laravel as an API and React as a front-end. This was my first time deep diving into PHP and Laravel so most of my time was spent learning about both of these.
 
 There are some minor cross-site reference forgery protections in the login and logout.
